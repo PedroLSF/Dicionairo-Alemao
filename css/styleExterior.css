@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+*{
+    font-family: 'Mukta', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* UNIDADE VH -> Altura do viewport*/
+    /* Estou deixando o Body definir um valor mínimo de altura com base na altura total do viewport*/
+}
+
+/* Váriaveis Globais*/
+
+a{
+    color: inherit;
+    text-decoration: inherit;  
+}
+
+.cidades a{
+    width: 50%;
+    height: 100px;
+    margin: 50px; 
+}
+
+:root{
+    --background-clean: beige;
+    --cor-da-empresa: #F68C29;
+}
+
+.exterior-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.exterior-content{
+    background-color: aqua;
+}
+
+.live-content{
+    background-color: darksalmon;
+}
+
+.mySwiper{
+    width: 70%;
+}
+.two-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper-wrapper{
+    margin-top: 25px;
+}
+
+.swiper-button-next{
+    margin-right: 65px;
+}
+
+.live-content, .exterior-content{
+    width: 60%;
+    padding: 20px;
+    padding-top: 10px;
+    overflow-wrap: break-word;
+    border-radius: 25px;
+    background-color: rgba(246, 140, 41, 0.25);
+    margin-bottom: 75px;
+}
+
+.live-content .cidades{
+    display: flex;
+    justify-content: row;
+    justify-content: space-evenly;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+.cidade1{
+    background-image: url("../images/CidAle.webp");
+}
+
+.cidade2{
+    background-image: url("../images/CidFranca.jpg");
+}
+
+.cidade3{
+    background-image: url("../images/CidNor.webp");
+}
+
+.cidade1, .cidade2, .cidade3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-shadow: 0.5px 0 0 #000, 0 -0.5px 0 #000, 0 0.5px 0 #000, -0.5px 0 0 #000;
+    border-radius: 15px;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.cidade1:hover, .cidade2:hover, .cidade3:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.cidades:hover .cidade1:not(:hover), .cidades:hover .cidade2:not(:hover), .cidades:hover .cidade3:not(:hover) {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+
+h1{
+ font-weight: bold;
+}
+
+a ul{
+    list-style: none;
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+*{
+    font-family: 'Mukta', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* UNIDADE VH -> Altura do viewport*/
+    /* Estou deixando o Body definir um valor mínimo de altura com base na altura total do viewport*/
+}
+
+main{
+    flex: 1;
+}
+/* Váriaveis Globais*/
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+:root{
+    --background-clean: beige;
+    --cor-da-empresa: #F68C29;
+}
+
+
+/* Estilização do Header*/
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cabecalho li{
+    list-style: none;
+}
+
+/* Estilização do Footer*/
+
+.rodape{
+    width: 100%; 
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content ul{
+    display: flex;
+    list-style: none;
+}
+
+.footer-content li{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

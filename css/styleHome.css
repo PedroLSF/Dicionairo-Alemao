@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+*{
+    font-family: 'Mukta', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* UNIDADE VH -> Altura do viewport*/
+    /* Estou deixando o Body definir um valor mínimo de altura com base na altura total do viewport*/
+}
+
+/* Váriaveis Globais*/
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+:root{
+    --background-clean: beige;
+    --cor-da-empresa: #F68C29;
+}
+
+.translation-menu{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DE-flag{
+    margin-right: 15px;
+}
+
+.arrow{
+    font-size: large;
+}
+
+.BR-flag{
+    margin-left: 15px;
+}
+.word-box{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.word-input{
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 25px;
+    width: 250px;
+}
+
+.word-buscar{
+    position: absolute;
+    margin-right: 20px;
+}
+
+.main-card{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+/* 1ª e 2ª Section*/
+
+.sections-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 300px;
+}
+
+.conteudos-card, .dialetos-card, .tendencias-card{ 
+    padding: 20px;
+    padding-top: 10px;
+    overflow-wrap: break-word;
+    width: 350px;
+    border-radius: 25px;
+    background-color: rgba(246, 140, 41, 0.25);
+}
+
+.tendencias-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: min-content;
+    width: 200px;
+    padding-bottom: 150px;
+    margin-right: 400px;
+    list-style: inside;
+}
+

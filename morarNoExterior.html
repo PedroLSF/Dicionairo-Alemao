@@ -4,105 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/stylePadrao.css">
+    <link rel="stylesheet" href="./css/styleExterior.css">
     <title>Morar no Exterior</title>
 </head>
 
 <body>
         <!--Conteúdo que irá introduzir os dados que o site terá-->
-        <header>
-            <nav>
-                <ul>
-                    <li><i class="bi bi-book"></i></li>
-                </ul>
-            </nav>
-        </header>
+        <header class = "cabecalho">
+          <nav class = "menu">
+              <ul class = "ul-menu">
+                  <a href="home.html"><li><svg width="40" height="40" viewBox="0 0 48 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.43 0C2.49 0.225 0 2.5 0 5V45C0 47.625 2.85 50 6 50H42C45.15 50 48 47.625 48 45V5C48 3.67392 47.3679 2.40215 46.2426 1.46447C45.1174 0.526784 43.5913 0 42 0H24V17.5L16.5 13.75L9 17.5V0H5.43ZM24 27.5H27C27.7956 27.5 28.5587 27.7634 29.1213 28.2322C29.6839 28.7011 30 29.337 30 30V40H27V35H24V40H21V30C21 29.337 21.3161 28.7011 21.8787 28.2322C22.4413 27.7634 23.2044 27.5 24 27.5ZM24 30V32.5H27V30H24ZM33 32.5H42V35L36 42.5H42V45H33V42.5L39 35H33V32.5Z" fill="black"/>
+                      </svg>
+                      </li></a>
+                  <a href="#"><li class = "NavHistorico">Histórico</li></a>
+                  <a href="#"><li class = "NavExterior">Morar no Exterior</li></a>
+                  <a href="#"><li class = "NavCadastro">Cadastro</li></a>
+              </ul>
+  
+              <ul class = "ul-login">
+                  <a href="#"><li><i class="bi bi-person-circle"></i></li></a>
+                  <a href="#"><li class = "NavLogin">Login</li></a>
+              </ul>
+          </nav>
+      </header>
         <!--Conteúdo Principal-->
         <main>
-            <span>Morar no Exterior</span>
-            <span>O que preciso saber?</span>
 
-            <div class = "ExteriorContent" id = "tripstory">
-                <h1>Tripstory</h1>
-                <p>
-                    O  projeto TripStory promove o entendimento cultural através de vídeos curtos produzidos e compartilhados por estudantes e viajantes do mundo.
+            <div class = "exterior-title">
+              <h2>Morar no Exterior</h2>
+              <h3>O que preciso saber?</h3>
+            </div>
 
-                    Estes vídeos enfocam costumes típicos, tradições e dicas sobre a vida cotidiana de uma cidade ou país em particular. Descubra os tesouros do mundo como vistos por nossos usuários e descubra lugares incríveis assistindo nossos vídeos!
-                </p>  
-                    <!-- Div com um Swiper -->
-                    <div class="swiper mySwiper">
+            <div class="two-cards">
+              <div class = "exterior-content" id = "tripstory">
+                  <h1>Tripstory</h1>
+                  <h5>
+                      O  projeto TripStory promove o entendimento cultural através de vídeos curtos produzidos e compartilhados por estudantes e viajantes do mundo.
 
-                        <!-- Swiper -->
-                        <div class="swiper-wrapper">
+                      Estes vídeos enfocam costumes típicos, tradições e dicas sobre a vida cotidiana de uma cidade ou país em particular. 
+                      
+                      <br>
+                      
+                      Descubra os tesouros do mundo como vistos por nossos usuários e descubra lugares incríveis assistindo nossos vídeos!
+                  </h5>  
+                      <!-- Div com um Swiper -->
+                      <div class="swiper mySwiper">
 
-                            <!-- Video 1 -->
-                          <div class="swiper-slide slide_1">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2MtZsLlissQ" title="YouTube slide player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <!-- Swiper -->
+                          <div class="swiper-wrapper">
+
+                              <!-- Video 1 -->
+                            <div class="swiper-slide slide_1">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/2MtZsLlissQ" title="YouTube slide player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+
+                              <!-- Video 2 -->
+                            <div class="swiper-slide slide_2">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/sarTk1Lnamw" title="YouTube slide player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+
+                              <!-- Video 3 -->
+                            <div class="swiper-slide slide_3">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/Yqked68IlPA" title="YouTube slide player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
                           </div>
 
-                            <!-- Video 2 -->
-                          <div class="swiper-slide slide_2">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/sarTk1Lnamw" title="YouTube slide player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <!--Pagination dos slides-->
+                          <div class="swiper-pagination"></div>
+                          
+                          <!-- Botão de Voltar e Avançar-->
+                          <div class="swipper-buttons">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                           </div>
-
-                            <!-- Video 3 -->
-                          <div class="swiper-slide slide_3">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yqked68IlPA" title="YouTube slide player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                          </div>
-                        </div>
-
-                        <!--Pagination dos slides-->
-                        <div class="swiper-pagination"></div>
-                        
-                        <!-- Botão de Voltar e Avançar-->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
+                      </div>
               </div>
 
 
-              <div class = "ExteriorContent" id = "HowToLiveContent">
+              <div class = "live-content" id = "HowToLiveContent">
 
-                <h1>Viver no Exterior</h1>
+                <h1>Como viver em...</h1>
+                
 
-                <!-- Cidade 1 -->
-                <ul>
-                  <li>Viver no Exterior</li>
-                  <li>Alemanha</li>
-                </ul>
+                <!-- Cidades -->
+                <div class = "cidades">
+                  <!-- Cidade 1 -->
+                  <a href="#">
+                    <ul  class= "cidade1">
+                      <li><h3>Viver no Exterior</h3></li>
+                      <li><h2>Alemanha</h2></li>
+                    </ul>
+                  </a>
 
-                 <!-- Cidade 2 -->
-                <ul>
-                  <li>Viver no Exterior</li>
-                  <li>França</li>
-                </ul>
+                  <!-- Cidade 2 -->
+                  <a href="#">
+                    <ul class= "cidade2">
+                      <li><h3>Viver no Exterior</h3></li>
+                      <li><h2>França</h2></li>
+                    </ul>
+                  </a>
 
-                <!-- Cidade 3 -->
-                <ul>
-                  <li>Viver no Exterior</li>
-                  <li>Noruega</li>
-                </ul>
-
-                <!-- Cidade 4 -->
-                <ul>
-                  <li>Viver no Exterior</li>
-                  <li>Japão</li>
-                </ul>
+                  <!-- Cidade 3 -->
+                  <a href="#">
+                    <ul class= "cidade3">
+                      <li><h3>Viver no Exterior</h3></li>
+                      <li><h2>Noruega</h2></li>
+                    </ul>
+                  </a>
+              </div>
 
               </div>
+            </div>
         </main>
 
         <!-- Footer com informações de contatos -->
-    <footer>
-      <h2>Vamos nos conectar?</h2>
-      <ul>
-          <li><i class="bi bi-whatsapp"></i></li>
-          <li><i class="bi bi-instagram"></i></li>
-          <li><i class="bi bi-linkedin"></i></li>
-          <li><i class="bi bi-twitter"></i></li>
-          <li><i class="bi bi-youtube"></i></li>
-      </ul>
-  </footer>
+        <footer class = "rodape">
+          <div class = "footer-content">
+          <h2 class = "footer-text">Vamos nos conectar?</h2>
+          <ul>
+              <li><i class="bi bi-whatsapp"></i></li>
+              <li><i class="bi bi-instagram"></i></li>
+              <li><i class="bi bi-linkedin"></i></li>
+              <li><i class="bi bi-twitter"></i></li>
+              <li><i class="bi bi-youtube"></i></li>
+          </ul>
+          </div>
+      </footer>
 
 </body>
 </html>

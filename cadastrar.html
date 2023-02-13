@@ -6,41 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="https://www.stevenskelton.ca/polymer/bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="stylesheet" href="./css/stylePadraoLoginCadastro.css">
+    <link rel="stylesheet" href="./css/styleCadastro.css">
+    <link rel="stylesheet" href="./css/styleButton.css">
     <title>Cadastro</title>
 </head>
 <body>
      <!--Conteúdo que irá introduzir os dados que o site terá-->
-     <header>
-        <ul>
-            <li><i class="bi bi-book"></i></li>
+     <header class = "cabecalho">
+        <ul class="menu">
+            <a href="home.html"><li><svg width="40" height="40" viewBox="0 0 48 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.43 0C2.49 0.225 0 2.5 0 5V45C0 47.625 2.85 50 6 50H42C45.15 50 48 47.625 48 45V5C48 3.67392 47.3679 2.40215 46.2426 1.46447C45.1174 0.526784 43.5913 0 42 0H24V17.5L16.5 13.75L9 17.5V0H5.43ZM24 27.5H27C27.7956 27.5 28.5587 27.7634 29.1213 28.2322C29.6839 28.7011 30 29.337 30 30V40H27V35H24V40H21V30C21 29.337 21.3161 28.7011 21.8787 28.2322C22.4413 27.7634 23.2044 27.5 24 27.5ZM24 30V32.5H27V30H24ZM33 32.5H42V35L36 42.5H42V45H33V42.5L39 35H33V32.5Z" fill="black"/>
+                </svg>
+                </li></a>
         </ul>
     </header>
     <!--Box de Cadastro-->
     <main>
-        <div class="cadastro">
-            <form action="/login">
-                <legend>Login</legend>
-                <label for = "Username">Username:</label>
-                <input type="text" id = "Username">
-                <label for = "Senha">Senha:</label>
-                <input type="text" id = "Senha">
-                <label for = "Nome">Nome:</label>
-                <input type="text" id = "Nome">
-                <label for = "CEP">CEP:</label>
-                <input type="text" id = "CEP">
-                <label for = "Cidade">Cidade:</label>
-                <input type="text" id = "Cidade">
-                <label for = "Bairro">Bairro:</label>
-                <input type="text" id = "Bairro">
-                <label for = "Rua">Rua:</label>
-                <input type="text" id = "Rua">
-                <button>Cadastrar</button>
-            </form>
+        <div class="content">
+            <div class="cadastro">
+                <form class = "formsCadastro" action="/login">
+                    <legend>Cadastro</legend>
+
+                    <div class = "form-item">
+                    <label for = "Username">Username:</label>
+                    <input type="text" id = "Username">
+                    </div>
+
+                    <div class = "form-item">
+                    <label for = "Senha">Senha:</label>
+                    <input type="text" id = "Senha">
+                    </div>
+
+                    <div class = "form-item">
+                    <label for = "Nome">Nome:</label>
+                    <input type="text" id = "Nome">
+                    </div>
+
+                    <div class = "form-item">
+                    <label for = "CEP">CEP:</label>
+                    <input type="text" id = "CEP">
+                    </div>
+
+                    <div class = "form-item">
+                    <label for = "Cidade">Cidade:</label>
+                    <input type="text" id = "Cidade">
+                    </div>
+
+                    <div class = "form-item">
+                    <label for = "Bairro">Bairro:</label>
+                    <input type="text" id = "Bairro">
+                    </div>
+
+                    <div class = "form-item">
+                    <label for = "Rua">Rua:</label>
+                    <input type="text" id = "Rua">
+                    </div>
+
+                    <button><span>Cadastrar</span></button>
+                </form>
+        </div>
         </div>
     </main>
     <!--Rodapé-->
-    <footer>
-        <h2>Vamos nos conectar?</h2>
+    <footer class = "rodape">
+        <div class = "footer-content">
+        <h2 class = "footer-text">Vamos nos conectar?</h2>
         <ul>
             <li><i class="bi bi-whatsapp"></i></li>
             <li><i class="bi bi-instagram"></i></li>
@@ -48,6 +79,7 @@
             <li><i class="bi bi-twitter"></i></li>
             <li><i class="bi bi-youtube"></i></li>
         </ul>
+        </div>
     </footer>
 </body>
 </html>
