@@ -78,10 +78,10 @@
                 </defs>
             </svg>
             
-            <div class = "word-box">
-            <input class = "word-input" placeholder="Digite sua palavra" autocomplete="on">
-            <i class="bi bi-search word-buscar"></i>
-            </div>
+            <form class = "word-box" action="/morarNoExterior.html" method="get">
+            <input class = "word-input" placeholder="Digite sua palavra" autocomplete="on" name = "word">
+            <button type="submit" class="fabutton word-buscar"><i class="bi bi-search word-buscar" id = "word-buscar"></i></button>
+            </form>
 
         </section>
 
@@ -147,5 +147,8 @@
         </ul>
         </div>
     </footer>
+
+    <script src="js/scriptHome.js"></script>
+
 </body>
 </html>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/stylePadraoLoginCadastro.css">
     <link rel="stylesheet" href="./css/styleLogin.css">
     <link rel="stylesheet" href="./css/styleButton.css">
+    <script src="js/scriptLogin.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -24,9 +25,13 @@
     <!--Box de Login-->
     <main>
 
+        <section class = "msg" id = "msg">
+            
+        </section>
+
         <div class="content">
         <div class="login">
-            <form class = "formsLogin"action="/login">
+            <form class = "formsLogin" action = "/login" method="post" name = "formsLogin" onsubmit= "return submissionLogin()">
                 <legend>Login</legend>
                 <div class = "form-item">
                 <label for = "Username">Username:</label>
@@ -34,15 +39,14 @@
                 </div>
                 <div class = "form-item">
                 <label for = "Senha">Senha:</label>
-                <input type="text" autocomplete="on" id = "Senha">
+                <input type="password" autocomplete="on" id = "Senha">
                 </div>
-                <button><span>Logar</span></button>
-                
+                <button type="submit" id = "logar"><span>Logar</span></button>
             </form>
         </div>
 
         <ul>
-            <li class = "Casdastrar">Cadastre-se</li>
+            <li class = "Casdastrar"><a href="cadastrar.html">Cadastre-se</a></li>
             <li class = "Esqueceu">Esqueceu a Senha?</li>
         </ul>
         </div>

@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./css/stylePadraoLoginCadastro.css">
     <link rel="stylesheet" href="./css/styleCadastro.css">
     <link rel="stylesheet" href="./css/styleButton.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    
+    <script src="js/scriptCadastro.js"></script>
     <title>Cadastro</title>
 </head>
 <body>
@@ -23,9 +28,14 @@
     </header>
     <!--Box de Cadastro-->
     <main>
+
+        <section class = "msg" id = "msg">
+            
+        </section>
+        
         <div class="content">
             <div class="cadastro">
-                <form class = "formsCadastro" action="/login">
+                <form class = "formsCadastro" action="/cadastro" method="post" name = "formsCadastro" onsubmit="return submissionCadastro()">
                     <legend>Cadastro</legend>
 
                     <div class = "form-item">
@@ -35,7 +45,7 @@
 
                     <div class = "form-item">
                     <label for = "Senha">Senha:</label>
-                    <input type="text" id = "Senha">
+                    <input type="password" id = "Senha">
                     </div>
 
                     <div class = "form-item">
@@ -63,7 +73,7 @@
                     <input type="text" id = "Rua">
                     </div>
 
-                    <button><span>Cadastrar</span></button>
+                    <button type="submit" id = "cadastrar"><span>Cadastrar</span></button>
                 </form>
         </div>
         </div>
