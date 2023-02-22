@@ -8,6 +8,8 @@
     <script src="https://www.stevenskelton.ca/polymer/bower_components/webcomponentsjs/webcomponents.min.js"></script>
     <link rel="stylesheet" href="./css/stylePadrao.css">
     <link rel="stylesheet" href="./css/styleHome.css">
+
+    <script src="js/scriptTraducao.js"></script>
     <title>Dicionário</title>
 </head>
 <body>
@@ -79,7 +81,7 @@
             </svg>
             
             <form class = "word-box" action="/morarNoExterior.html" method="get">
-            <input class = "word-input" placeholder="Digite sua palavra" autocomplete="on" name = "word">
+            <input class = "word-input" placeholder="Digite sua palavra" autocomplete="on" name = "word" onblur="traduzir()">
             <button type="submit" class="fabutton word-buscar"><i class="bi bi-search word-buscar" id = "word-buscar"></i></button>
             </form>
 
