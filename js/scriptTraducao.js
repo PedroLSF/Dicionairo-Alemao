@@ -24,15 +24,15 @@ function traduzir(){
     //     .then(response => getData(palavraDigitada, response))
     //     .catch(err => console.error(err));
     
-     getData("kommen", "Vir")
+    getData("kommen", "Vir")
 
 }
 
 function getData(palavraDigitada, response){
 
     //getting the values
-    // var palavraTrad = data.response.translation[0];
-    var palavraTrad = response;
+    var palavraTrad = data.response.translation[0];
+    console.log(palavraTrad)
     document.querySelector(".word-output").value = palavraTrad;
     //saving the values in local storage
     // localStorage.setItem("palavraDig", palavraDigitada);
