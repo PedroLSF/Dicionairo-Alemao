@@ -24,7 +24,7 @@ function traduzir(){
     //     .then(response => getData(palavraDigitada, response))
     //     .catch(err => console.error(err));
     
-    getData("kommen", "Vir")
+    getData("kommen", "Palavra Traduzida")
 
 }
 
