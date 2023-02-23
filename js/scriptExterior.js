@@ -38,5 +38,4 @@ function getData(palavraDigitada, response){
     document.querySelector("#dataTraduzida").innerHTML =
                 `<span class ="card"> ${palavraTrad} </span>
                 `;
-
 }
