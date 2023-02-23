@@ -1,5 +1,5 @@
-// document.getElementById("dataDigitada").innerHTML=localStorage.getItem("palavraDig");
-// document.getElementById("dataTraduzida").innerHTML=localStorage.getItem("palavraTrad");
+document.getElementById("dataDigitada").innerHTML=localStorage.getItem("palavraDig");
+document.getElementById("dataTraduzida").innerHTML=localStorage.getItem("palavraTrad");
 
 // console.log(localStorage.getItem("palavraDig"));
 // console.log(localStorage.getItem("palavraTrad"));
