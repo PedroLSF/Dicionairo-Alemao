@@ -31,10 +31,7 @@ function traduzir(){
 function getData(palavraDigitada, response){
 
     //getting the values
-    var palavraTrad = data.response.translation[0];
-    console.log(palavraTrad)
+    // var palavraTrad = data.response.translation[0];
+    let palavraTrad = response
     document.querySelector(".word-output").value = palavraTrad;
-    //saving the values in local storage
-    // localStorage.setItem("palavraDig", palavraDigitada);
-    // localStorage.setItem("palavraTrad", palavraTrad);
 }
