@@ -1,22 +1,40 @@
 function traduzir(){
 
-    let value = document.querySelector(".word-input").value;
-    var palavraDigitada = value;
-    var init = {
+    const encodedParams = new URLSearchParams();
 
-        method: 'GET',
-        headers: {'X-Secret': '202f0d9bef017e465adda19a91d94719e29f203d6ce0789ac77bf3db08aa8cb3'},
-        mode: 'no-cors',
-        cache: 'default'
+    let palavraDigitada = document.querySelector(".word-input").value;
+
+    encodedParams.append("q", palavraDigitada);
+    encodedParams.append("target", "pt");
+    encodedParams.append("source", "de");
+
+    const options = {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'Accept-Encoding': 'application/gzip',
+            'X-RapidAPI-Key': '5f21641cddmsh4601c9771a0c5e8p1b1289jsn6d601b362759',
+            'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+        },
+        body: encodedParams
     };
 
+    // fetch('https://google-translate1.p.rapidapi.com/language/translate/v2', options)
+    //     .then(response => response.json())
+    //     .then(response => getData(palavraDigitada, response))
+    //     .catch(err => console.error(err));
+    
+     getData("Ankommen", "Chegar")
 
-    language = "dept"
-    fetch(`https://api.pons.com/v1/dictionary?q=${palavraDigitada}&l=${language}`,init).then((response) => {
-                        response.json().then((data) => {
-                        translation(data);
-                        console.log(data);
-                    })
-                })
+}
 
+function getData(palavraDigitada, response){
+
+    //getting the values
+    // var palavraTrad = data.response.translation[0];
+    var palavraTrad = response;
+    document.querySelector(".word-output").value = palavraTrad;
+    //saving the values in local storage
+    // localStorage.setItem("palavraDig", palavraDigitada);
+    // localStorage.setItem("palavraTrad", palavraTrad);
 }
