@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('word');
-// console.log(myParam)
+console.log(myParam)
 
 document.getElementById("dataDigitada").innerHTML=myParam;
 
