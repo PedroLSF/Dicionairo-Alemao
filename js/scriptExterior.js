@@ -15,7 +15,7 @@ const options = {
     headers: {
         'content-type': 'application/x-www-form-urlencoded',
         'Accept-Encoding': 'application/gzip',
-        'X-RapidAPI-Key': '5f21641cddmsh4601c9771a0c5e8p1b1289jsn6d601b362759',
+        'X-RapidAPI-Key': '48d5f99071mshfa3d37f86b80e85p1459e8jsn1ed82910a9e2',
         'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
     },
     body: encodedParams
@@ -30,7 +30,6 @@ function getData(data){
 
     //getting the values
     let palavraTrad = data;
-    console.log(palavraTrad)
     let printPalavra = document.querySelector("#palavraTrad")
     printPalavra.innerHTML =
                 `<span class ="word-card"> ${palavraTrad} </span>
