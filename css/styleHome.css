@@ -79,6 +79,7 @@ a{
 }
 
 .conteudos-card, .dialetos-card, .tendencias-card{ 
+    margin-bottom: 75px;
     padding: 20px;
     padding-top: 10px;
     overflow-wrap: break-word;
@@ -94,6 +95,7 @@ a{
     width: min-content;
     width: 200px;
     padding-bottom: 150px;
+    margin-left: 100px;
     margin-right: 400px;
     list-style: inside;
 }
