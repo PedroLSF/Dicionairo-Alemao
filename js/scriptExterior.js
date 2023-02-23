@@ -6,8 +6,9 @@ document.getElementById("dataTraduzida").innerHTML=localStorage.getItem("palavra
 
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('word');
-console.log(myParam)
+// console.log(myParam)
+document.getElementById("dataDigitada").innerHTML = myParam;
 
 const urlTrad = new URLSearchParams(window.location.search);
 const myTrad = urlTrad.get('wordTrad');
-console.log(myTrad)
+document.getElementById("dataTrad").innerHTML = myTrad;
