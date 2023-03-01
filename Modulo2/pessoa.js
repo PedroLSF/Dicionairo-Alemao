@@ -1,5 +1,7 @@
 var scanf = require('scanf');
 
+// Construtor do Pai
+
 class Pessoa{
     constructor(nome, idade, genero){
         this.nome = nome;

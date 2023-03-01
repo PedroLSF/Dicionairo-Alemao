@@ -2,9 +2,15 @@ const { Pessoa } = require("./pessoa");
 const { Usuario } = require("./usuario");
 var scanf = require('scanf');
 
+// Váriavel Globais
+
 let usuario = null;
 
+// Menu
+
 function menu(){
+
+    //Opções para o Usuário
 
     console.log('\n');
     console.log('1 - Criar um Usuário:\n');
@@ -15,7 +21,11 @@ function menu(){
     console.log('0 - Sair\n');
     console.log('Escolha o que fazer: ');
 
+    //Armazena a Escolha do Usuário
+
     var escolha = scanf("%d");
+
+    // Criação do Usuário
 
     if(escolha == 1){
         console.log('\n');
@@ -38,20 +48,28 @@ function menu(){
         menu();
     }
     
+    // Alteração da Idade
+
     else if(escolha == 2){
         usuario.alterarIdade();
         menu();
     }
+
+    // Alteração da Senha
     
     else if(escolha == 3){
         usuario.alterarSenha();
         menu();
     }
     
+    // Alteração do E-mail
+
     else if(escolha == 4){
         usuario.alterarEmail();
         menu();
     }
+
+    // Visualização do Usuário Criado ou Editado
 
     else if(escolha == 5){
 
@@ -68,6 +86,14 @@ function menu(){
         console.log(usuario.email + "\n");
         menu();
     }
+
+    // Sair do sistema
+    
+    else if(escolha == 6){
+        console.log("Obrigado por utilizar iTalents Group");
+    }
+
+    // Erro
 
     else{
         console.log("Digite um valor válido\n")

@@ -1,6 +1,8 @@
 const { Pessoa } = require("./pessoa");
 var scanf = require('scanf');
 
+//Construtor do Filho
+
 class Usuario extends Pessoa{
     constructor(nome, idade, genero, senha, email){
         super(
