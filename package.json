@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "prompt-sync": "^4.2.0",
+    "scanf": "^1.1.2"
+  },
+  "scripts": {
+    "start": "node ./Modulo2/index.js",
+    "dev": "nodemon ./Modulo2/index.js"
+  }
+}
