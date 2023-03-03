@@ -72,6 +72,8 @@ const readUsuario = (req,res) =>{
     res.render("./usuario.view/Read.html", { usuario : usuarios[index] });
 }
 
+// oi
+
 const updateUsuario = (req,res) =>{
     const nome = req.params.Nome;
     let index = -1;
