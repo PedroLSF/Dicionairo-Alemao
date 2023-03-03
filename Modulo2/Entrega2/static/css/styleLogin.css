@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+*{
+    font-family: 'Mukta', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* UNIDADE VH -> Altura do viewport*/
+    /* Estou deixando o Body definir um valor mínimo de altura com base na altura total do viewport*/
+}
+
+/* Váriaveis Globais*/
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+:root{
+    --background-clean: beige;
+    --cor-da-empresa: #F68C29;
+}
+
+
+/* Centralizando a tela Login*/
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+legend{
+    font-weight: 900;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.formsLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item{
+    margin-right: auto;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.form-item label{
+    padding-right: 10px;
+}
+
+.form-item input{
+    float: right;
+    border-radius: 25px;
+    border-width: 0;
+    padding: 5px;
+}
+
+.login{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(246, 140, 41, 0.25);
+    border-radius: 15px;
+}
+
+/* Conteúdo abaixo do Login*/
+
+main .content ul{
+    display: flex;
+    justify-content: row;
+}
+
+li{
+    list-style: none;
+}
+
+.Esqueceu{
+    margin-left: auto;
+}
+
+/* Inserção do HTML */
+
+.card{
+    color: black;
+    background-color: rgba(246, 140, 41, 0.25);
+    border-radius: 25px;
+    margin-bottom: 0.5em;
+    padding: 0.5em 1em;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://www.stevenskelton.ca/polymer/bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="stylesheet" href="/css/stylePadraoLoginCadastro.css">
+    <link rel="stylesheet" href="/css/styleCadastro.css">
+    <link rel="stylesheet" href="/css/styleButton.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+    <title>Cadastro</title>
+</head>
+<body>
+     <!--Conteúdo que irá introduzir os dados que o site terá-->
+     <header class = "cabecalho">
+        <ul class="menu">
+            <a href="home.html"><li><svg width="40" height="40" viewBox="0 0 48 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.43 0C2.49 0.225 0 2.5 0 5V45C0 47.625 2.85 50 6 50H42C45.15 50 48 47.625 48 45V5C48 3.67392 47.3679 2.40215 46.2426 1.46447C45.1174 0.526784 43.5913 0 42 0H24V17.5L16.5 13.75L9 17.5V0H5.43ZM24 27.5H27C27.7956 27.5 28.5587 27.7634 29.1213 28.2322C29.6839 28.7011 30 29.337 30 30V40H27V35H24V40H21V30C21 29.337 21.3161 28.7011 21.8787 28.2322C22.4413 27.7634 23.2044 27.5 24 27.5ZM24 30V32.5H27V30H24ZM33 32.5H42V35L36 42.5H42V45H33V42.5L39 35H33V32.5Z" fill="black"/>
+                </svg>
+                </li></a>
+        </ul>
+    </header>
+    <!--Box de Cadastro-->
+    <main>
+
+        <section class = "msg" id = "msg">
+            
+        </section>
+        
+            <div class="cadastro">
+                    <legend>Read</legend>
+
+
+                    <!-- Nome -->
+
+                    <div class = "form-item">
+                        <!-- <%= usuario.Nome %> = Código para o render identificar que irá inserir o objeto -->
+                    <label for = "Nome">Nome: <%= usuario.Nome %> </label>
+                    </div>
+
+                    <!-- Idade -->
+
+                    <div class = "form-item">
+                    <label for = "Idade">Idade: <%= usuario.Idade %></label>
+                    </div>
+                    
+                    <!-- Genero -->
+
+                    <div class = "form-item">
+                    <label for = "Genero">Genero: <%= usuario.Genero %> </label>
+                    </div>
+
+                    <!-- Senha -->
+
+                    <div class = "form-item">
+                    <label for = "Senha">Senha: <%= usuario.Senha %></label>
+                    </div>
+
+                    <!-- E-mail -->
+
+                    <div class = "form-item">
+                    <label for = "Email">Email: <%= usuario.Email %></label>
+                    </div>
+
+                    <div class = "buttons">
+                    <a href="/update/<%= usuario.Nome %>"><button type="submit" id = "update"><span>Update</span></button></a>
+                    <form action="/delete" method="post">
+                        <input type="hidden" name="Nome" value="<%= usuario.Nome %>">
+                        <button type="submit" id = "delete">
+                            <span>Delete</span>
+                        </button>
+                    </form>
+                    </div>
+        </div>
+    </main>
+    <!--Rodapé-->
+    <footer class = "rodape">
+        <div class = "footer-content">
+        <h2 class = "footer-text">Vamos nos conectar?</h2>
+        <ul>
+            <li><i class="bi bi-whatsapp"></i></li>
+            <li><i class="bi bi-instagram"></i></li>
+            <li><i class="bi bi-linkedin"></i></li>
+            <li><i class="bi bi-twitter"></i></li>
+            <li><i class="bi bi-youtube"></i></li>
+        </ul>
+        </div>
+    </footer>
+
+    <script>
+
+        usuario = fetch(`/read/${nome}`);
+    </script>
+</body>
+</html>
