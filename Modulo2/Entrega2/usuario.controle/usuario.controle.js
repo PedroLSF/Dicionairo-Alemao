@@ -45,14 +45,12 @@ const createUsuario = (req,res) =>{
 
     usuarios.push(usuario);
 
-    res.redirect('https://http.cat/201');
+    res.redirect(`/read/${usuario.Nome}`);
 }
 
 const readUsuario = (req,res) =>{
-    console.log("A");
     const nome = req.params.Nome;
     let index = -1;
-    console.log("B");
     for(let i = 0; i <= usuarios.length; i++){
         if(usuarios[i] != null){
             if(usuarios[i].Nome == nome){
@@ -61,7 +59,6 @@ const readUsuario = (req,res) =>{
             }
         }
     }
-    console.log("C");
 
     if(index == -1){
         res.redirect('https://http.cat/404');
@@ -129,7 +126,6 @@ const deleteUsuario = (req,res) => {
     }
 
     usuarios.splice(index,1);
-    console.log(usuarios);
     res.redirect('https://http.cat/204');
 }
 
