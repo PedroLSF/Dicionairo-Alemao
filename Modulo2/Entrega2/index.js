@@ -19,4 +19,5 @@ app.listen(port, () =>{
     console.log(`Rodando em http://localhost:${port}`)
 })
 
+//Importar o CSS
 app.use(express.static('./static'));

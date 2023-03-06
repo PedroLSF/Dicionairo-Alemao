@@ -8,6 +8,7 @@ router.get("/cadastro", (req, res) => {
     res.render("usuario.view/Create.html")
 })
 
+// Criação das Rotas que executa as funções
 router.post("/create", urlencodedParser,usuario.createUsuario);
 router.get("/read/:Nome", urlencodedParser,usuario.readUsuario);
 router.get("/readAll", urlencodedParser,usuario.readAllUsuario);
